@@ -28,3 +28,33 @@
   justify-content: space-between;
   width: 30%;
 }
+
+.section1 {
+  position: relative;
+  margin-top: -100px;
+}
+
+.section1 .titleWrapper {
+  position: absolute;
+  color: #fff;
+  border: 3px solid wheat;
+  padding: 30px;
+  font-size: 30px;
+  line-height: 50px;
+  top: 200px;
+  left: 600px;
+  height: 100px;
+}
+
+.section1 img {
+  width: 100%;
+}
+
+.section1 .discription {
+  position: relative;
+  top: 450px;
+  left: 550px;
+  color: #fff;
+  width: 500px;
+  font-size: 17px;
+}
