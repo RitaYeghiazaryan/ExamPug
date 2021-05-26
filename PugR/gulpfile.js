@@ -46,9 +46,7 @@ let project_folder = "dist",
 
     function  pugs(){
         return src(path.src.html)
-        .pipe(pug({
-            pretty:true
-        }))
+        .pipe(pug())
         .pipe(gulp.dest(path.build.html))
         .pipe(browser.stream())
     }
