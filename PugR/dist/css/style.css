@@ -109,3 +109,32 @@
 .section2 .item2 img {
   width: 100%;
 }
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section3 .item4 {
+  color: #fff;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px;
+  line-height: 55px;
+}
+
+.section3 .item4 a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px;
+}
