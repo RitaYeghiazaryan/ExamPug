@@ -85,7 +85,7 @@
   margin-left: 200px;
 }
 
-.section2 .item1 .img_container {
+.section2 .item1 .image_container {
   color: #fff;
 }
 
@@ -137,4 +137,14 @@
   color: #fff;
   border: 1px solid #fff;
   padding: 15px;
+}
+.section4 {
+  background-color: #000;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.section4 .image_container {
+  color: #fff;
 }
