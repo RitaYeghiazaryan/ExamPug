@@ -29,7 +29,7 @@ let project_folder = "dist",
         },
         src:{
             html:    source_folder + "/pug/index.pug",
-            css:   source_folder + "/**/*.scss",
+            css:   source_folder + "/scss/**/*.scss",
             img:    source_folder+ "/img/**/*.{jpg,png,svg,gif,ico,webp}",
             fonts: source_folder + "/fonts/*.ttf"
           
@@ -50,12 +50,12 @@ let project_folder = "dist",
         .pipe(gulp.dest(path.build.html))
         .pipe(browser.stream())
     }
-    function html() {
-        return src(path.src.html)
-            .pipe(htmlmin({ collapseWhitespace: true }))
-            .pipe(dest(path.build.html))
-            .pipe(browser.stream())
-    }
+    // function html() {
+    //     return src(path.src.html)
+    //         .pipe(htmlmin({ collapseWhitespace: true }))
+    //         .pipe(dest(path.build.html))
+    //         .pipe(browser.stream())
+    // }
  
 
     function css() {
@@ -116,8 +116,7 @@ let project_folder = "dist",
         return del(path.clean);
     }
     
-let watch =gulp.series(clean,pugs,html,css,imagemin,gulp.parallel(watchFiles,browserSync));
-exports.html=html;
+let watch =gulp.series(clean,pugs,css,imagemin,gulp.parallel(watchFiles,browserSync));
 exports.pugs=pugs;
 exports.watch=watch;
 exports.css= css;
